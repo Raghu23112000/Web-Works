@@ -1,0 +1,38 @@
+* {
+    font-family: sans-serif;
+}
+.navbar {
+    overflow: hidden;
+    position: sticky;
+    top:0;
+    width: 100%;
+    height: 10%;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a {
+    text-decoration: none;
+    color: rgb(5, 0, 0);
+    text-transform: uppercase;
+}
+.navbar ul li::after {
+    content: "";
+    height: 3px;
+    width: 0;
+    background: #0353bb;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after {
+    width: 100%;
+}
